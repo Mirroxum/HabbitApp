@@ -1,3 +1,198 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Comfortaa', cursive;
+	margin: 0;
+	background-color: #F3F6FD;
+	font-weight: 400;
+}
+
+.app {
+	display: flex;
+}
+
+.logo {
+	margin-bottom: 50px;
+}
+
+.panel {
+	background: white;
+	min-height: 100vh;
+	padding: 30px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	align-items: center;
+}
+
+.menu__list {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.menu__item {
+	background: #FFFFFF;
+	box-shadow: 0px 8px 14px 0px #3E6BE01F;
+	border-radius: 14px;
+	border: none;
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+}
+
+.menu__item:hover {
+	background: #6A6AFB;
+}
+
+.menu__item:hover img {
+	filter: brightness(0) invert(1);
+}
+
+.menu__item_active{
+	background: #5051F9;
+}
+
+.menu__item_active img {
+	filter: brightness(0) invert(1);
+}
+
+.menu__add {
+	width: 45px;
+	height: 45px;
+	background: none;
+	border-radius: 14px;
+	border: 1px solid #CAD5FF;
+	cursor: pointer;
+}
+
+.menu__add:hover {
+	background: #EFF2FF;
+}
+
+.content {
+	min-width: 800px;
+	padding: 45px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 33px;
+	color: #000;
+}
+
+.progress {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	min-width: 235px;
+}
+
+.progres__text {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.progres__name {
+	color: #232360;
+	line-height: 16px;
+	font-size: 14px;
+}
+
+.progres__percent {
+	color: #768396;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.progres__bar {
+	width: 100%;
+	background: #E6E9Ed;
+	border-radius: 4px;
+	height: 5px;
+	position: relative;
+}
+
+.progres__cover-bar {
+	position: absolute;
+	width: 50%;
+	background: #5051F9;
+	border-radius: 4px;
+	height: 5px;
+}
+
+main {
+	margin-top: 30px;
+}
+
+.habbit {
+	border-radius: 10px;
+	background: white;
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.habbit__day{
+	font-size: 14px;
+	line-height: 16px;
+	background-color: #FBFAFF;
+	border-radius: 10px 0 0 10px;
+	padding: 20px 40px;
+	border-right: 1px solid #E7EBFB;
+	min-width: 150px;
+}
+
+.habbit__comment {
+	font-size: 16px;
+	line-height: 16px;
+	padding: 20px 25px;
+}
+
+.habbit__delete {
+	margin-left: auto;
+	margin-right: 20px;
+	background: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 2px;
+}
+
+.habbit__delete:hover {
+	background: #EFF2FF;
+}
+
+input {
+	background: white;
+	border: 1px solid #E7EBFB;
+	border-radius: 9px;
+	padding: 12px 20px;
+	font-family: 'Comfortaa', cursive;
+	width: 100%;
+
+}
+
+.input__icon {
+	position: absolute;
+}
+
+.habbit__form {
+	display: flex;
+	gap: 15px;
+	width: 100%;
+	padding: 0 25px;
+}
+
