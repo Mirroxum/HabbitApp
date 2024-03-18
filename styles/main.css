@@ -179,14 +179,10 @@ input {
 	background: white;
 	border: 1px solid #E7EBFB;
 	border-radius: 9px;
-	padding: 12px 20px;
+	padding: 12px 30px;
 	font-family: 'Comfortaa', cursive;
 	width: 100%;
 
-}
-
-.input__icon {
-	position: absolute;
 }
 
 .habbit__form {
@@ -194,5 +190,24 @@ input {
 	gap: 15px;
 	width: 100%;
 	padding: 0 25px;
+	position: relative;
 }
 
+.input__icon {
+	position: absolute;
+	top: 10px;
+	left: 35px;
+}
+
+.habbit__done{
+	border: none;
+	padding: 0 30px;
+	font-family: 'Comfortaa', cursive;
+	color: #5051F9;
+	background-color:#EDECFE;
+	border-radius: 9px;
+}
+
+.habbit__done:hover {
+	background-color: #d3d1f8;
+}
