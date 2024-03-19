@@ -127,10 +127,10 @@ h1 {
 
 .progres__cover-bar {
 	position: absolute;
-	width: 50%;
 	background: #5051F9;
 	border-radius: 4px;
 	height: 5px;
+	transition: all 0.5s;
 }
 
 main {
@@ -185,6 +185,10 @@ input {
 
 }
 
+input.error {
+	border: 1px solid red;
+}
+
 .habbit__form {
 	display: flex;
 	gap: 15px;
@@ -210,4 +214,5 @@ input {
 
 .habbit__done:hover {
 	background-color: #d3d1f8;
+	cursor: pointer;
 }

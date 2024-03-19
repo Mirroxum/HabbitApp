@@ -26,11 +26,11 @@
     </div>
     <div class="content">
       <header>
-        <h1>Отжимания</h1>
+        <h1 class="h1">-</h1>
         <div class="progress">
           <div class="progres__text">
             <div class="progres__name">Прогресс</div>
-            <div class="progres__percent">80%</div>
+            <div class="progres__percent">%</div>
           </div>
           <div class="progres__bar">
             <div class="progres__cover-bar"></div>
@@ -38,22 +38,14 @@
         </div>
       </header>
       <main>
-        <div>
-          <div class="habbit">
-            <div class="habbit__day">День 1</div>
-            <div class="habbit__comment">Первый подход всегда даётся тяжело</div>
-            <button class="habbit__delete">
-              <img src="images/delete.svg" alt="Удалить день 1">
-            </button>
-          </div>
-        </div>
+        <div id="days"></div>
         <div class="habbit">
-          <div class="habbit__day">День 2</div>
-          <div class="habbit__form">
-            <input class="input_icon" "text" placeholder="Комментарий">
+          <div class="habbit__day">День _</div>
+          <form class="habbit__form" onsubmit="addDays(event)"">
+            <input name="comment" class="input_icon" "text" placeholder="Комментарий">
             <img class = "input__icon" src="images/comment.svg" alt="Комментарий">
-            <button class="habbit__done">Готово</button>
-          </div>
+            <button class="habbit__done" type="submit">Готово</button>
+          </form>
         </div>
       </main>
     </div>
