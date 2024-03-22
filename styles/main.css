@@ -247,4 +247,55 @@ input.error {
 	position: absolute;
 	right: 15px;
 	top: 15px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 27px;
+}
+
+.icon-label {
+	color: #768396;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+
+.icon-select {
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}
+
+.icon {
+	border: 1px solid #5051F9;
+	border-radius: 14px;
+	background: white;
+	margin-bottom: 18px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+}
+
+.icon_active {
+	background: #5051F9;
+}
+
+.icon_active img {
+	filter: brightness(0) invert(1);
+}
+
+.icon:hover {
+	background: #6A6AFB;
+}
+
+.icon:hover img{
+	filter: brightness(0) invert(1);
 }
