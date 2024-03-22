@@ -43,11 +43,30 @@
           <div class="habbit__day">День _</div>
           <form class="habbit__form" onsubmit="addDays(event)"">
             <input name="comment" class="input_icon" "text" placeholder="Комментарий">
-            <img class = "input__icon" src="images/comment.svg" alt="Комментарий">
-            <button class="habbit__done" type="submit">Готово</button>
+            <img class="input__icon" src="images/comment.svg" alt="Комментарий">
+            <button class="button" type="submit">Готово</button>
           </form>
         </div>
       </main>
+    </div>
+    <div class="cover cover_hidden">
+      <div class="popup">
+        <h2>Новая привычка</h2>
+        <div class="icon-label">Иконка</div>
+        <div class="icon-select">
+          <button class="icon icon_active"><img src="./images/food.svg" alt="Еда"></button>
+          <button class="icon"><img src="./images/sport.svg" alt="Спорт"></button>
+          <button class="icon"><img src="./images/water.svg" alt="Вода"></button>
+          <form class="popup__form">
+            <input type="text" name="name" placeholder="Название">
+            <input type="number" name="target" placeholder="Цель">
+            <button class="button" type="submit">Добавить</button>
+          </form>
+          <button>
+            <img src="./images/cross.svg" alt="Закрыть">
+          </button>
+        </div>
+      </div>
     </div>
   </div>
   <script src="scripts/app.js"></script>
